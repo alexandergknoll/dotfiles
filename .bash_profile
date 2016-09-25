@@ -5,6 +5,9 @@ export PATH="$HOME/bin:$PATH";
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Add laravel executable to the `$PATH`
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
