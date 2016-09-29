@@ -152,11 +152,12 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-# Web dev aliases
-alias webserver="php -S localhost:8000"
+# Start local PHP server
+alias phpserver="php -S localhost:8000"
 
 # MySQL aliases
 alias mysqllogin="mysql -h localhost -u root -p"
 alias mysqlcreate="mysqladmin -u root -p create "
 alias mysqldrop="mysqladmin -u root -p drop "
+alias mysqlimport="mysql -u root -p "
 alias mysqlexport="mysqldump -u root -p "
