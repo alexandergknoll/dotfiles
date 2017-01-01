@@ -158,6 +158,9 @@ alias phpserver="php -S localhost:8000 ~/.phpserver/router.php"
 # Start local PHP server with Silverstripe router
 alias ssserver="php -S localhost:8000 ./framework/main.php"
 
+# PHP Switch alias
+alias phpswitch="sudo update-alternatives --config php"
+
 # MySQL aliases
 alias mysqllogin="mysql -h localhost -u root -p"
 alias mysqlcreate="mysqladmin -u root -p create "
