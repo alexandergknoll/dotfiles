@@ -98,12 +98,21 @@ function gitio() {
 }
 
 # Start a PHP server from a directory, optionally specifying the port
-# using php router to emulate Apache mod rewrites
+# using generic PHP router to emulate Apache mod rewrites
 # (Requires PHP 5.4.0+.)
 function phpserver() {
 	local port="${1:-8000}";
 	local ip=$(hostname -i);
 	php -S "${ip}:${port} ~/.phprouter/router.php";
+}
+
+# Start a PHP server from a directory, optionally specifying the port
+# using Silverstripe router for Silverstripe CMS
+# (Requires PHP 5.4.0+.)
+function ssserver() {
+	local port="${1:-8000}";
+	local ip=$(hostname -i);
+	php -S "${ip}:${port} ./framework/main.php";
 }
 
 # UTF-8-encode a string of Unicode symbols
@@ -113,6 +122,24 @@ function escape() {
 	if [ -t 1 ]; then
 		echo ""; # newline
 	fi;
+}
+
+function urlencode() {
+  local string="${1}"
+  local strlen=${#string}
+  local encoded=""
+  local pos c o
+
+  for (( pos=0 ; pos<strlen ; pos++ )); do
+     c=${string:$pos:1}
+     case "$c" in
+        [-_.~a-zA-Z0-9] ) o="${c}" ;;
+        * )               printf -v o '%%%02x' "'$c"
+     esac
+     encoded+="${o}"
+  done
+  echo "${encoded}"    # You can either set a return variable (FASTER)
+  REPLY="${encoded}"   #+or echo the result (EASIER)... or both... :p
 }
 
 # Decode \x{ABCD}-style Unicode escape sequences

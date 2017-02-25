@@ -1,0 +1,12 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
+
+# Add rbenv to the `$PATH` and init
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# Add laravel executable to the `$PATH`
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+# Add phpenv by comand line
+export PATH="$HOME/.phpenv/bin:$PATH"
