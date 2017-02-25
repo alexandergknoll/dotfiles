@@ -1,6 +1,6 @@
 # My dotfiles
 
-These dotfiles are forked from @mathiasbynens; I've made some tweaks and added aliases that suit my own needs.
+These dotfiles are forked from @mathiasbynens; I've made some tweaks and added aliases that suit my own needs.  These have been tested and are working on my Macbook Pro running Arch Linux, however they may also work on macOS.
 
 ## Installation
 
@@ -63,26 +63,10 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. I recommend [forking mathiasbynens's repo](https://github.com/mathiasbynens/dotfiles/fork) instead, though.
 
-### Sensible macOS defaults
-
-When setting up a new Mac, you may want to set some sensible macOS defaults:
-
-```bash
-./.macos
-```
-
-### Install Homebrew formulae
-
-When setting up a new Mac, you may want to install some common [Homebrew](http://brew.sh/) formulae (after installing Homebrew, of course):
-
-```bash
-./brew.sh
-```
-
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/mathiasbynens/dotfiles/issues)!
+[welcome](https://github.com/alexandergknoll/dotfiles/issues)!
 
 ## Original Author
 
