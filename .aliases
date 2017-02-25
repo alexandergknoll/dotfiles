@@ -153,7 +153,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias reload="exec $SHELL -l"
 
 # Start local PHP server with rewrite router
-alias phpserver="php -S localhost:8000 ~/.phpserver/router.php"
+alias phpserver="php -S localhost:8000 ~/.phprouter/router.php"
 
 # Start local PHP server with Silverstripe router
 alias ssserver="php -S localhost:8000 ./framework/main.php"
