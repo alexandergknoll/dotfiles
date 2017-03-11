@@ -23,6 +23,12 @@ function mkd() {
 	mkdir -p "$@" && cd "$_";
 }
 
+# Flatten a directory (credit: http://unix.stackexchange.com/questions/52814/flattening-a-nested-directory)
+function flatten() {
+	find "$@" -mindepth 2 -type f -exec mv -t "$@" -i '{}' +
+}
+
+
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
 function targz() {
 	local tmpFile="${@%/}.tar";
