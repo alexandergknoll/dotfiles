@@ -15,8 +15,8 @@ alias dt="cd ~/Desktop"
 alias g="git"
 alias h="history"
 
-# Set Atom as editor
-alias e="atom "
+# Set VS Code as editor
+alias e="code "
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
