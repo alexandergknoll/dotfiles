@@ -94,10 +94,3 @@ command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
-
-# MySQL aliases
-alias mysqllogin="mysql -h localhost -u root -p"
-alias mysqlcreate="mysqladmin -u root -p create "
-alias mysqldrop="mysqladmin -u root -p drop "
-alias mysqlimport="mysql -u root -p "
-alias mysqlexport="mysqldump -u root -p "
