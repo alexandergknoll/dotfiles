@@ -16,7 +16,7 @@ alias g="git"
 alias h="history"
 
 # Set VS Code as editor
-alias e="code "
+alias e="code-oss "
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
