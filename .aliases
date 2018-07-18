@@ -79,6 +79,9 @@ alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # Empty trash
 alias emptytrash="rm -rf ~/.local/share/Trash/*"
 
+# Run OpenVPN default config
+alias vpn="openvpn /etc/openvpn/client.conf"
+
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
