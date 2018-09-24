@@ -204,9 +204,9 @@ function getcertnames() {
 # opens the given location
 function a() {
 	if [ $# -eq 0 ]; then
-		code .;
+		code-git .;
 	else
-		code "$@";
+		code-git "$@";
 	fi;
 }
 
