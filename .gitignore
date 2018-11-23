@@ -1,4 +1,5 @@
 .extra
+*/*/.gitconfig
 
 # Compiled Python files
 *.pyc

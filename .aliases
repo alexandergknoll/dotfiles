@@ -16,7 +16,7 @@ alias g="git"
 alias h="history"
 
 # Set VS Code as editor
-alias e="code-git"
+alias e="open -a \"Visual Studio Code\""
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -61,8 +61,12 @@ alias linuxupdate='sudo pacman -Syu; npm install npm -g; npm update -g; sudo gem
 alias maxosupdate='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update; sudo gem cleanup'
 
 # Google Chrome
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
+alias chrome="open -a \"Google Chrome\""
+alias canary="open -a \"Google Chrome Canary\""
+
+# Firefox
+alias ff="open -a \"Firefox\""
+alias ffde="open -a \"Firefox Developer Edition\""
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
