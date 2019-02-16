@@ -8,12 +8,14 @@ eval "$(rbenv init -)"
 # Laravel
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-# phpenv
-export PATH="$HOME/.phpenv/bin:$PATH"
-eval "$(phpenv init -)"
-
 # npm
 export PATH="$HOME/.npm-global/bin:$PATH"
 
 # composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# PHP switcher script
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+# VS Code
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"

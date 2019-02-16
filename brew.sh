@@ -95,5 +95,20 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
+# Ruby version management and build dependencies
+brew install rbenv
+brew install ruby-build
+brew install postgresql
+brew services start postgresql
+
+# PHP development & dependencies
+brew install openldap libiconv
+brew install php@5.6
+brew install php@7.0
+brew install php@7.1
+brew install php@7.2
+brew install mariadb
+brew services start mariadb
+
 # Remove outdated versions from the cellar.
 brew cleanup

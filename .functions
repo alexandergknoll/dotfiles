@@ -95,21 +95,11 @@ function server() {
 }
 
 # Start a PHP server from a directory, optionally specifying the port
-# using generic PHP router to emulate Apache mod rewrites
 # (Requires PHP 5.4.0+.)
 function phpserver() {
 	local port="${1:-8000}";
-	local ip=$(hostname -i);
-	php -S "${ip}:${port} ~/.phprouter/router.php";
-}
-
-# Start a PHP server from a directory, optionally specifying the port
-# using Silverstripe router for Silverstripe CMS
-# (Requires PHP 5.4.0+.)
-function ssserver() {
-	local port="${1:-8000}";
-	local ip=$(hostname -i);
-	php -S "${ip}:${port} ./framework/main.php";
+	local host=localhost;
+	php -S "${host}:${port}";
 }
 
 # UTF-8-encode a string of Unicode symbols
@@ -209,9 +199,9 @@ function getcertnames() {
 # opens the given location
 function a() {
 	if [ $# -eq 0 ]; then
-		code-git .;
+		code .;
 	else
-		code-git "$@";
+		code "$@";
 	fi;
 }
 
