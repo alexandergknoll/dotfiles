@@ -1,6 +1,6 @@
 # My dotfiles
 
-These dotfiles are forked from @mathiasbynens; I've made some tweaks and added aliases that suit my own needs.  These have been tested and are working on my Macbook Pro running Arch Linux, however they may also work on macOS.
+These dotfiles are forked from @mathiasbynens; I've made some tweaks and added aliases that suit my own needs.  These were used for some time on Arch Linux and have since beeen updated and adapted to macOS.
 
 ## Installation
 
